@@ -1,0 +1,2 @@
+/home/mehrdad/cordova_prj/toclient/platforms/android/CordovaLib/ant-build/AndroidManifest.xml : \
+/home/mehrdad/cordova_prj/toclient/platforms/android/CordovaLib/AndroidManifest.xml \
