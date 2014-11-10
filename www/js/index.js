@@ -1,4 +1,6 @@
 document.addEventListener("deviceready", startApp, false);
+$(document).ready(function(){
+});
 var fileTransfer;
 var db;
 var sql='';
@@ -30,6 +32,10 @@ function startApp()
 }
 //-----------------------------------------File Manage--------------------------------------
 var fn_exists;
+function playVid()
+{
+	$("#v1").get(0).play();
+}
 function startPlaying()
 {
 /*
@@ -39,6 +45,7 @@ function startPlaying()
 	}
 	alert($("#v1").html());
 */
+/*
 	if(play_list_index >= play_list.length-1)
 		play_list_index = 0;
 	alert('playing file:///sdcard/artan/'+play_list[play_list_index]);
@@ -46,7 +53,8 @@ function startPlaying()
 	//$("#v1").html('<source src="file:///sdcard/artan/'+play_list[play_list_index]+'" type="video/mp4">');
 	$("#v1").get(0).play();
 	play_list_index++;
-	
+*/
+	 playVid();	
 }
 function file_exists(file_name,fn)
 {
@@ -89,7 +97,6 @@ function gotDir(dirEntry) {
                 for (i=0; i<entries.length; i++) {
                         play_list.push(entries[i].name);
                 }
-		startPlaying();
         },
         function(error){
 		alert(error);
@@ -223,6 +230,19 @@ function startDownload()
 			}
 		});
 	}
+}
+function getFactor()
+{
+	var factor = parseInt($.trim($("#factor").val()),10);
+	if(!isNaN(factor) && factor>0)
+	{
+		$.get(server_url+'main/index.php',{'factor':factor},function(res){
+			alert('res : '+res);
+			startPlaying();
+		});
+	}
+	else
+		alert('لطفا شماره فاکتور را به صحت وارد کنید');
 }
 //----------------------------------------file----------------------------------------------
 
