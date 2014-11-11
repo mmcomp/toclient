@@ -32,20 +32,75 @@
         <script type="text/javascript">
             app.initialize();
         </script>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css" />
+
+		<script>
+		function fitVideo(wii,hii)
+		{
+			var wi = $(document).width();
+			var hi = $(document).height();
+			//alert('jquery='+wi+'---cordova='+wii);
+			//alert('jquery='+hi+'---cordova='+hii);
+			$(".contain").css('width',hi+'px');
+			$(".contain").css('width',wi+'px');
+
+			$("#v1").css('width',hi+'px');
+			$("#v1").css('width',wi+'px');
+		}
+		</script>
+		<style>
+			.contain {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				padding:0;
+				margin:0;
+				left: 0px;
+				top: 0px;
+				z-index: -1000;
+				overflow:hidden;
+			}
+			.videoPlayer {
+				min-height: 100%;
+				min-width:100%;
+				position:absolute;
+				bottom:0;
+				left:0;
+			}
+			#info {
+				width: 100%;
+				height: 50%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			#info {
+				z-index: 10;
+			}
+		</style>
     </head>
     <body>
-	شماره فاکتور : <input id="factor" /><br/>
-	<button onclick="getFactor();">ارسال</button>
-	<video id="v1" width="300" height="240" controls  autoplay ><!--onended="startPlaying();">-->
-		<source src="file:///sdcard/artan/0.mp4" type="video/mp4">
-	</video>
+	<div class="contain" >
+		<div id="info" class="text-right" >
+			<input  type="number" id="factor"  style="margin-top:50px;height:100px;width:200px;font-size:200%;direction:ltr;" class="info" />
+			<button onclick="getFactor();" class="btn btn-primary btn-lg info" style="height:100px;width:200px;font-size:200%;" >ارسال</button>
+			<span  class="btn btn-danger info" style="display:none;font-size:200%;margin-top:100px;padding:5px;" ></span>
+		</div>
+		<video id="v1" class="videoPlayer"  onended="startPlaying();" >
+		</video>
+	</div>
 <!--
+شماره فاکتور :
+	
 	<input id="key" placeholder="key"/><input id="value" placeholder="value"/>
 	<button onclick="addingConf();">Add Conf</button>
 	<button onclick="readConf();">Read Conf</button>
 	<button onclick="getAddVersion();">Get Add Version</button>
-	<button onclick="playVid();">Play Video</button>
--->
+	<button id='pv' onclick="playVid();">Play Video</button>
 	<div id="log">LOG:<br/></div>
+-->
+	
     </body>
 </html>

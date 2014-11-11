@@ -15,6 +15,27 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/net.yoik.cordova.plugins.screenorientation/www/screenorientation.js",
+        "id": "net.yoik.cordova.plugins.screenorientation.screenorientation",
+        "clobbers": [
+            "cordova.plugins.screenorientation"
+        ]
+    },
+    {
+        "file": "plugins/net.yoik.cordova.plugins.screenorientation/www/screenorientation.android.js",
+        "id": "net.yoik.cordova.plugins.screenorientation.screenorientation.android",
+        "merges": [
+            "cordova.plugins.screenorientation"
+        ]
+    },
+    {
+        "file": "plugins/com.mesmotronic.plugins.fullscreen/www/AndroidFullScreen.js",
+        "id": "com.mesmotronic.plugins.fullscreen.AndroidFullScreen",
+        "clobbers": [
+            "AndroidFullScreen"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -165,6 +186,8 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "org.apache.cordova.file-transfer": "0.4.7",
+    "net.yoik.cordova.plugins.screenorientation": "1.3.0",
+    "com.mesmotronic.plugins.fullscreen": "0.9.0",
     "org.apache.cordova.file": "1.3.1"
 }
 // BOTTOM OF METADATA

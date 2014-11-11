@@ -15,6 +15,14 @@
                         {
                             "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"android-package\" value=\"net.yoik.cordova.plugins.screenorientation.YoikScreenOrientation\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AndroidFullScreen\"><param name=\"android-package\" value=\"com.mesmotronic.plugins.FullScreenPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -33,6 +41,12 @@
     },
     "installed_plugins": {
         "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "toclient.mmcomp.com"
+        },
+        "net.yoik.cordova.plugins.screenorientation": {
+            "PACKAGE_NAME": "toclient.mmcomp.com"
+        },
+        "com.mesmotronic.plugins.fullscreen": {
             "PACKAGE_NAME": "toclient.mmcomp.com"
         }
     },

@@ -15,6 +15,8 @@ var ads_url = [];
 var ads_url_index = -1;
 var play_list = [];
 var play_list_index = 0;
+var scH = 0;
+var scW = 0;
 function consolelog(inp)
 {
 	//$('#log').append(inp+'<br/>');
@@ -28,6 +30,18 @@ function startApp()
 	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 	$(document).ajaxError(function( event, jqxhr, settings, thrownError ) {
 		alert('خطا در ارتباط با شبکه'+"\n"+jqxhr.responseText+"\n"+settings.url);
+	});
+	screen.lockOrientation('landscape');
+	AndroidFullScreen.immersiveMode(function(ook){
+//		AndroidFullScreen.immersiveWidth(function(iw){
+//			scW = iw;
+//			AndroidFullScreen.immersiveHeight(function(ih){
+//				scH = ih;
+//				fitVideo(scW,scH);
+//			},function(error){alert(error);});
+//		}, function(error){alert(error);});
+	},function(error){
+		alert(error);
 	});
 }
 //-----------------------------------------File Manage--------------------------------------
@@ -45,16 +59,13 @@ function startPlaying()
 	}
 	alert($("#v1").html());
 */
-/*
-	if(play_list_index >= play_list.length-1)
+	if(play_list_index == play_list.length)
 		play_list_index = 0;
-	alert('playing file:///sdcard/artan/'+play_list[play_list_index]);
+	//alert('play_list.length = '+play_list.length+' , play_list_index = '+play_list_index+"\n"+'<source src="file:///sdcard/artan/'+play_list[play_list_index]+'" type="video/mp4">');
 	//$("#v1").prop('src',"file:///sdcard/artan/"+play_list[play_list_index]);
-	//$("#v1").html('<source src="file:///sdcard/artan/'+play_list[play_list_index]+'" type="video/mp4">');
+	$("#v1").html('<source src="file:///sdcard/artan/'+play_list[play_list_index]+'" type="video/mp4">');
 	$("#v1").get(0).play();
 	play_list_index++;
-*/
-	 playVid();	
 }
 function file_exists(file_name,fn)
 {
@@ -233,12 +244,18 @@ function startDownload()
 }
 function getFactor()
 {
+	startPlaying();
 	var factor = parseInt($.trim($("#factor").val()),10);
 	if(!isNaN(factor) && factor>0)
 	{
 		$.get(server_url+'main/index.php',{'factor':factor},function(res){
-			alert('res : '+res);
-			startPlaying();
+			if(res == 1)
+			{
+				$(".info").hide();
+				$("span.info").html(factor).show();
+			}
+			else
+				alert('خطا در ثبت نوبت');
 		});
 	}
 	else

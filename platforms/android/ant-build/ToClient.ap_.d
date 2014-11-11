@@ -38,6 +38,8 @@
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/index.html \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/com.mesmotronic.plugins.fullscreen \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransfer.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransferError.js \
@@ -64,9 +66,17 @@
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileEntry.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android/FileSystem.js \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/com.mesmotronic.plugins.fullscreen/www \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/com.mesmotronic.plugins.fullscreen/www/AndroidFullScreen.js \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation/www \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation/www/screenorientation.js \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation/www/screenorientation.android.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/js/index.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/js/jquery.min.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/js/conf.js \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/css/bootstrap.min.css \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/css/bootstrap-rtl.css \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/css/index.css \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/css/bootstrap-responsive.min.css \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/img/logo.png \
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/AndroidManifest.xml \

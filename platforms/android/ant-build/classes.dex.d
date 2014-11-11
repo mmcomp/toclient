@@ -60,4 +60,13 @@
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$TrackingInputStream.class \
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$3.class \
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$1.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/com/mesmotronic/plugins/FullScreenPlugin$6$1.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/com/mesmotronic/plugins/FullScreenPlugin$6.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/com/mesmotronic/plugins/FullScreenPlugin$5.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/com/mesmotronic/plugins/FullScreenPlugin$4.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/com/mesmotronic/plugins/FullScreenPlugin$3.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/com/mesmotronic/plugins/FullScreenPlugin$2.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/com/mesmotronic/plugins/FullScreenPlugin.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/com/mesmotronic/plugins/FullScreenPlugin$1.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/net/yoik/cordova/plugins/screenorientation/YoikScreenOrientation.class \
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/dexedLibs/classes-5fc6f70981b53eb328dae292c5ef094b.jar \
