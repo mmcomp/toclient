@@ -17,9 +17,11 @@ var play_list = [];
 var play_list_index = 0;
 var scH = 0;
 var scW = 0;
+var factor = 0;
+var icheckPeriod = 3000;
+var my_media;
 function consolelog(inp)
 {
-	//$('#log').append(inp+'<br/>');
 	alert(inp);
 }
 function startApp()
@@ -33,16 +35,19 @@ function startApp()
 	});
 	screen.lockOrientation('landscape');
 	AndroidFullScreen.immersiveMode(function(ook){
-//		AndroidFullScreen.immersiveWidth(function(iw){
-//			scW = iw;
-//			AndroidFullScreen.immersiveHeight(function(ih){
-//				scH = ih;
-//				fitVideo(scW,scH);
-//			},function(error){alert(error);});
-//		}, function(error){alert(error);});
 	},function(error){
 		alert(error);
 	});
+}
+function playAudio()
+{
+    my_media = new Media("file:///sdcard/artan/1.mp3", function(){
+        alert('ok');
+        }, function(er){
+            for(i in er)
+                alert(i+' -> '+er[i]);
+        });
+    my_media.play();
 }
 //-----------------------------------------File Manage--------------------------------------
 var fn_exists;
@@ -245,7 +250,7 @@ function startDownload()
 function getFactor()
 {
 	startPlaying();
-	var factor = parseInt($.trim($("#factor").val()),10);
+	factor = parseInt($.trim($("#factor").val()),10);
 	if(!isNaN(factor) && factor>0)
 	{
 		$.get(server_url+'main/index.php',{'factor':factor},function(res){
@@ -253,6 +258,7 @@ function getFactor()
 			{
 				$(".info").hide();
 				$("span.info").html(factor).show();
+				getState();
 			}
 			else
 				alert('خطا در ثبت نوبت');
@@ -260,6 +266,36 @@ function getFactor()
 	}
 	else
 		alert('لطفا شماره فاکتور را به صحت وارد کنید');
+}
+function getState()
+{
+	if(factor != 0)
+	{
+		$.get(server_url+'main/index.php',{'state':factor},function(res){
+			if(res == 1)
+				delivered();
+			else if(res == 2)
+				startOver();
+			if(res != 2)
+			{
+				setTimeout(function(){
+					getState();
+				},checkPeriod);
+			}
+		});
+	}
+}
+function delivered()
+{
+	alert('Delivered');
+    playAudio();
+}
+function startOver()
+{
+    my_media.stop();
+	$("#v1").get(0).stop();
+	$(".info").show();
+        $("span.info").html('').hide();
 }
 //----------------------------------------file----------------------------------------------
 

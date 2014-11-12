@@ -30,6 +30,7 @@
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/_where-is-www.txt \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/ahang \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/cordova.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/cordova_plugins.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/js \
@@ -38,6 +39,7 @@
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/index.html \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.media \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/com.mesmotronic.plugins.fullscreen \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www \
@@ -66,11 +68,15 @@
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileEntry.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android/FileSystem.js \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.media/www \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.media/www/Media.js \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/org.apache.cordova.media/www/MediaError.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/com.mesmotronic.plugins.fullscreen/www \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/com.mesmotronic.plugins.fullscreen/www/AndroidFullScreen.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation/www \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation/www/screenorientation.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation/www/screenorientation.android.js \
+/home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/ahang/1.mp3 \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/js/index.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/js/jquery.min.js \
 /home/mehrdad/cordova_prj/toclient/platforms/android/assets/www/js/conf.js \

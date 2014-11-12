@@ -47,6 +47,12 @@
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$ReadFileCallback.class \
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$17.class \
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/media/AudioPlayer.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/media/AudioPlayer$STATE.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/media/AudioPlayer$1.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/media/AudioPlayer$MODE.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/media/AudioHandler.class \
+/home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/media/FileHelper.class \
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$TrackingGZIPInputStream.class \
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$ExposedGZIPInputStream.class \
 /home/mehrdad/cordova_prj/toclient/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$5.class \

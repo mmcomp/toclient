@@ -18,6 +18,9 @@
     <feature name="AndroidFullScreen">
         <param name="android-package" value="com.mesmotronic.plugins.FullScreenPlugin" />
     </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
     <name>ToClient</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

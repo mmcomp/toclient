@@ -36,6 +36,20 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/org.apache.cordova.media/www/MediaError.js",
+        "id": "org.apache.cordova.media.MediaError",
+        "clobbers": [
+            "window.MediaError"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.media/www/Media.js",
+        "id": "org.apache.cordova.media.Media",
+        "clobbers": [
+            "window.Media"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -188,6 +202,7 @@ module.exports.metadata =
     "org.apache.cordova.file-transfer": "0.4.7",
     "net.yoik.cordova.plugins.screenorientation": "1.3.0",
     "com.mesmotronic.plugins.fullscreen": "0.9.0",
+    "org.apache.cordova.media": "0.2.14",
     "org.apache.cordova.file": "1.3.1"
 }
 // BOTTOM OF METADATA
