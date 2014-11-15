@@ -18,8 +18,10 @@ var play_list_index = 0;
 var scH = 0;
 var scW = 0;
 var factor = 0;
-var icheckPeriod = 3000;
+var checkPeriod = 3000;
 var my_media;
+var continPlaying = false;
+var alarmOn = false;
 function consolelog(inp)
 {
 	alert(inp);
@@ -41,13 +43,14 @@ function startApp()
 }
 function playAudio()
 {
-    my_media = new Media("file:///sdcard/artan/1.mp3", function(){
-        alert('ok');
-        }, function(er){
-            for(i in er)
-                alert(i+' -> '+er[i]);
-        });
-    my_media.play();
+    if(!alarmOn)
+    {
+        my_media = new Media("file:///sdcard/artan/1.mp3", function(){
+            }, function(er){
+            });
+        my_media.play();
+        alarmOn = true;
+    }
 }
 //-----------------------------------------File Manage--------------------------------------
 var fn_exists;
@@ -68,9 +71,13 @@ function startPlaying()
 		play_list_index = 0;
 	//alert('play_list.length = '+play_list.length+' , play_list_index = '+play_list_index+"\n"+'<source src="file:///sdcard/artan/'+play_list[play_list_index]+'" type="video/mp4">');
 	//$("#v1").prop('src',"file:///sdcard/artan/"+play_list[play_list_index]);
-	$("#v1").html('<source src="file:///sdcard/artan/'+play_list[play_list_index]+'" type="video/mp4">');
-	$("#v1").get(0).play();
-	play_list_index++;
+    if(continPlaying)
+    {
+        $("#v1").html('<source src="file:///sdcard/artan/'+play_list[play_list_index]+'" type="video/mp4">');
+        $("#v1").get(0).play();
+     	alert("play_list_index:"+play_list_index+' , '+play_list.length);
+        play_list_index++;
+    }
 }
 function file_exists(file_name,fn)
 {
@@ -249,6 +256,7 @@ function startDownload()
 }
 function getFactor()
 {
+    continPlaying = true;
 	startPlaying();
 	factor = parseInt($.trim($("#factor").val()),10);
 	if(!isNaN(factor) && factor>0)
@@ -287,15 +295,19 @@ function getState()
 }
 function delivered()
 {
+    continPlaying = false;
+    alarmOn = false;
 	alert('Delivered');
     playAudio();
 }
 function startOver()
 {
     my_media.stop();
-	$("#v1").get(0).stop();
+    my_media.release();
+    alert('start over factor = '+factor);
+	$("#v1").html('');
 	$(".info").show();
-        $("span.info").html('').hide();
+    $("span.info").hide();
 }
 //----------------------------------------file----------------------------------------------
 
